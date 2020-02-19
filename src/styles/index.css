@@ -1,0 +1,351 @@
+* {
+  font-family: "Roboto";
+}
+
+* p {
+  font-size: 1.2em;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+}
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.child1 {
+  width: 25%;
+}
+
+.child2 {
+  width: 25%;
+}
+
+.child3 {
+  width: 25%;
+}
+
+.child4 {
+  width: 25%;
+}
+
+#nav #nav-home:hover {
+  color: #483d8b;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#nav #nav-about:hover {
+  color: #ff6247;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#nav #nav-skills:hover {
+  color: #ffd700;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#nav #nav-port:hover {
+  color: #ff1493;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#nav #nav-connect:hover {
+  color: #663399;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+#home {
+  background-color: #483d8b;
+  color: white;
+}
+
+#home span {
+  color: #3d8b47;
+}
+
+#about {
+  background-color: #ff6247;
+}
+
+#about p {
+  width: 50%;
+  text-align: center;
+}
+
+#about span {
+  color: #3574A4;
+}
+
+#skills {
+  background-color: #ffd700;
+}
+
+#skills #skills-header {
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+#skills span {
+  color: #8106A9;
+}
+
+#skills img {
+  height: 50px;
+  width: 50px;
+}
+
+#skills tr {
+  height: 50px;
+  text-align: center;
+}
+
+#skills .columns {
+  width: 30%;
+  text-align: center;
+  padding: 0 5%;
+  height: 50%;
+}
+
+#skills ul {
+  list-style-type: none;
+}
+
+#portfolio {
+  background-color: #ff1493;
+}
+
+#portfolio img {
+  width: 300px;
+  border-radius: 25px;
+}
+
+#portfolio span {
+  color: #20B1FF;
+}
+
+#portfolio table {
+  text-align: center;
+}
+
+#portfolio #portfolio-header {
+  width: 100%;
+  text-align: center;
+}
+
+#connect {
+  background-color: #663399;
+  color: white;
+}
+
+#connect span {
+  color: #E3BB3F;
+}
+
+#connect .connect-header {
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#connect .columns {
+  width: 10%;
+  text-align: center;
+  padding: 0 10%;
+  height: 20%;
+}
+
+.overlaythree {
+  width: 480px;
+  height: 360px;
+  display: inline-block;
+}
+
+.pseudover {
+  position: relative;
+  display: inline-block;
+}
+
+.pseudover:after {
+  content: attr(title);
+  color: rgba(255, 255, 255, 0.75);
+  padding: .5em 1em;
+  font-family: helvetica;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.pseudover:hover:after {
+  background: rgba(0, 182, 221, 0.8);
+  color: #fff;
+}
+
+.pseudover.v2:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+}
+
+.pseudover.v2:hover:before {
+  content: attr(title);
+  position: absolute;
+  margin-top: -.5em;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  font-family: helvetica;
+}
+
+@media (max-device-width: 320px) {
+  #about {
+    height: 100vh;
+  }
+  #about p {
+    width: 70%;
+  }
+  #skills {
+    height: 180vh;
+  }
+  #portfolio {
+    height: 215vh;
+  }
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 1000px) {
+  #about p {
+    width: 70%;
+  }
+  #skills {
+    height: 160vh;
+  }
+  #portfolio {
+    height: 185vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  #portfolio-header {
+    padding-top: 10%;
+  }
+  #portfolio div {
+    width: 100%;
+  }
+  #skills div {
+    width: 50%;
+  }
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  -webkit-animation: typing 1.5s steps(13, end), blink-caret 0.75s step-end infinite;
+          animation: typing 1.5s steps(13, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+/*# sourceMappingURL=index.css.map */
