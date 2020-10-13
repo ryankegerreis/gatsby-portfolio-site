@@ -1,6 +1,7 @@
 .Container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .Nav{
@@ -8,9 +9,35 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
+  font-weight: 700;
+  font-size: 2em;
 }
 
-.Image{
-  
-  background-image: '../images/gatsby-astronaut.png';
+.Link{
+  text-decoration: none;
+    color: white;
+}
+
+.GreetingContainer{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
+  width: 100vw;
+}
+
+.Greeting{
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
