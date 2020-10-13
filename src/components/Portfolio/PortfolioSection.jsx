@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import Waves from '../../imageFiles/videos/Waves.mp4'
+import Poster from '../../imageFiles/Poster.jpeg'
 
 export default class PortfolioSection extends Component {
   render() {
@@ -14,7 +15,7 @@ export default class PortfolioSection extends Component {
             <a className='Link' href='https://ryankegerreis.blog/'>Blog</a>
           </span>
         </div>
-        <video autoPlay muted loop src={Waves} className='BackgroundVid' />
+        <video autoPlay muted loop src={Waves} poster={Poster} className='BackgroundVid' />
         <div className='GreetingContainer'>
           <span className='Greeting'>Hi I'm Ryan, I build things on the internet.</span>
         </div>
