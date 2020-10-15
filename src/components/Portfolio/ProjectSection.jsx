@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 
+import projects from '../../data/ProjectData'
 import ProjectCard from './components/ProjectCard'
+import Chicken from '../../imageFiles/chicken-run.svg'
+import RE from '../../imageFiles/reinvest.jpg'
+import PromiseApp from '../../imageFiles/promise.svg'
 
 export default class ProjectSection extends Component {
   constructor(props) {
     super(props)
 
-    this.projects = [1, 2, 3]
+    console.log(projects)
+    this.images = [Chicken, RE, PromiseApp]
   }
 
   render() {
@@ -20,8 +25,9 @@ export default class ProjectSection extends Component {
         </div>
         <div className='ProjectContainer'>
           {
-            this.projects.map((item) => {
-              return <ProjectCard item={item} />
+            projects.map((item, index) => {
+              console.log(item)
+              return <ProjectCard key={index} item={item} photo={this.images[index]} />
             })
           }
         </div>
