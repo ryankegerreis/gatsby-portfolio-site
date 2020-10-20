@@ -5,21 +5,22 @@ export default class ProjectCard extends Component {
     super(props)
 
     this.state = {
-      opened: false
+      opened: false,
     }
 
+    this.onClick = this.onClick.bind(this)
   }
 
-  /*
-  Title
-  Brief description
-  Image
-  */
+  onClick() {
+    console.log("Clicked!")
+    window.open(this.props.item.live);
+  }
+
   render() {
     const { item, photo } = this.props;
 
     return (
-      <div className='Card'>
+      <div onClick={this.onClick} className='Card'>
         <img src={photo} className='CardImage' />
         <p>{item.name}</p>
       </div>

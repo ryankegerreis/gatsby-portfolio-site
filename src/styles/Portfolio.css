@@ -43,6 +43,7 @@ video {
   z-index: -1;
 }
 
+/* ProjectSection */
 .ProjectSection { 
   display: flex;
   flex-direction: column;
@@ -56,14 +57,28 @@ video {
 .ProjectContainer{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
 
+.ProjectTitle{
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 30px;
+}
+
+.ProjectContent{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+/* ProjectCard */
 .Card{
-  width: 28%;
+  width: 29%;
   justify-content: space-even;
-  margin: 10px;
+  margin: 30px;
   background-color: gray;
   border-radius: 8px;
   text-align: center;
@@ -71,5 +86,6 @@ video {
 
 .CardImage{
   width: 100%;
-  height: 100%;
+  height: 75%;
+  border-radius: 8px;
 }
