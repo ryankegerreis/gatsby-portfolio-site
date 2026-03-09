@@ -6,6 +6,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    // gatsby-plugin-csp removed; use react-helmet for security headers
+    // `gatsby-plugin-helmet` removed; use react-helmet directly in components
     {
       resolve: `gatsby-source-filesystem`,
       options: {
