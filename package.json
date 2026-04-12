@@ -6,21 +6,17 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^5.16.1",
-    "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
-    "gatsby-plugin-offline": "^6.16.0",
     "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
-    "gatsby-source-filesystem": "^5.16.0",
-    "gatsby-transformer-sharp": "^5.16.0",
     "prop-types": "^15.8.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "react-helmet": "^6.1.0",
     "react-typing-effect": "^2.0.5"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.2"
   },
   "keywords": [
     "gatsby"
@@ -41,5 +37,14 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "overrides": {
+    "cookie": "0.7.2",
+    "immutable": "3.8.3",
+    "lodash": "4.18.1",
+    "path-to-regexp": "0.1.13",
+    "serialize-javascript": "7.0.5",
+    "tmp": "0.2.5",
+    "webpack": "5.106.1"
   }
 }
