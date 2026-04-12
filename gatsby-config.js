@@ -8,14 +8,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     // Note: Head tags and meta are managed via react-helmet in components.
     // Note: CSP and other HTTP security headers should be configured at the hosting/CDN/server level.
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
