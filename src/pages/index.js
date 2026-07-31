@@ -9,6 +9,7 @@ import About from '../components/About'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
 import Connect from '../components/Connect'
+import Projects from '../components/Projects'
 
 const IndexPage = () => (
   <Layout>
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Skills />
     <Portfolio />
     <Connect />
+    <Projects />
   </Layout>
 )
 

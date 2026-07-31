@@ -219,6 +219,23 @@ body{
   height: 20%;
 }
 
+#projects {
+  background-color: #1f6f5f;
+  color: white;
+}
+
+#projects a {
+  color: white;
+  font-size: 1.4rem;
+  text-underline-offset: 0.3em;
+  transition: color .25s ease-in-out;
+}
+
+#projects a:hover,
+#projects a:focus-visible {
+  color: #ffd700;
+}
+
 .overlaythree {
   width: 480px;
   height: 360px;
