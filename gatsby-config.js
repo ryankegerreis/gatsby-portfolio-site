@@ -5,10 +5,7 @@ module.exports = {
     author: `Ryan Kegerreis`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    // Note: Head tags and meta are managed via react-helmet in components.
     // Note: CSP and other HTTP security headers should be configured at the hosting/CDN/server level.
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

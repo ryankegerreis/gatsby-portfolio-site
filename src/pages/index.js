@@ -2,18 +2,17 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
-import Home from '../components/Home'
-import About from '../components/About'
-import Skills from '../components/Skills'
-import Portfolio from '../components/Portfolio'
-import Connect from '../components/Connect'
-import Projects from '../components/Projects'
+import Home from "../components/Home"
+import About from "../components/About"
+import Skills from "../components/Skills"
+import Portfolio from "../components/Portfolio"
+import Connect from "../components/Connect"
+import Projects from "../components/Projects"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
     <Home />
     <About />
     <Skills />
@@ -22,5 +21,7 @@ const IndexPage = () => (
     <Projects />
   </Layout>
 )
+
+export const Head = () => <Seo title="Home" />
 
 export default IndexPage
