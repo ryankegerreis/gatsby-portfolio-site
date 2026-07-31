@@ -3,6 +3,7 @@ module.exports = {
     title: `Ryan Kegerreis | Portfolio`,
     description: `Ryan Kegerreis is a Software Developer in Fort Lauderdale, Florida.`,
     author: `Ryan Kegerreis`,
+    siteUrl: `https://ryankegerreis.com`,
   },
   plugins: [
     // Note: CSP and other HTTP security headers should be configured at the hosting/CDN/server level.
@@ -16,6 +17,12 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        serialize: ({ path }) => ({ url: path }),
       },
     },
   ],

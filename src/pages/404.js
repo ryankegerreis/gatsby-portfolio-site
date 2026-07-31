@@ -10,6 +10,8 @@ const NotFoundPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="404: Not found" />
+export const Head = () => (
+  <Seo title="404: Not found" pathname="/404/" noIndex />
+)
 
 export default NotFoundPage
