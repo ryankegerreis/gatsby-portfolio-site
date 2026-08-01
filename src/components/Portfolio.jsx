@@ -3,7 +3,7 @@ import React, { Component, Fragment } from 'react'
 import portfolioProjects from '../data/ProjectData'
 import Chicken from '../imageFiles/chicken-run.svg'
 import RE from '../imageFiles/reinvest.jpg'
-import Promise from '../imageFiles/promise.svg'
+import PromiseImage from '../imageFiles/promise.svg'
 
 
 export default class Portfolio extends Component {
@@ -39,7 +39,7 @@ export default class Portfolio extends Component {
               <table align="center">
                 <tr><h3>{portfolioProjects[2].name}</h3></tr>
                 <tr> <a href={portfolioProjects[2].live} title='View Site' className='pseudover v2' target="_blank" rel="noopener noreferrer">
-                  <img src={Promise} alt={portfolioProjects[2].alt} />
+                  <img src={PromiseImage} alt={portfolioProjects[2].alt} />
                 </a> </tr>
               </table>
             </div>
