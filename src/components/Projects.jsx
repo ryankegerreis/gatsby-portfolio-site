@@ -8,11 +8,18 @@ const Projects = () => (
   >
     <h1 id="projects-heading">Projects</h1>
     <p>
-      Roost —{" "}
+      <a
+        href="https://roostapp.co/"
+        target="_blank"
+        rel="noopener"
+      >
+        Roost
+      </a>{" "}
+      —{" "}
       <a
         href="https://www.figma.com/community/file/1665385597168149368/roost-homepage-v1?fuid=772600186485980694"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
       >
         roost homepage v1
       </a>
@@ -21,7 +28,7 @@ const Projects = () => (
     <a
       href="https://github.com/ryankegerreis/bettermarkdown"
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener"
     >
       bettermarkdown
     </a>
