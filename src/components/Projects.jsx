@@ -23,7 +23,16 @@ const Projects = () => (
       >
         roost homepage v1
       </a>
-      , the first version of the homepage design.
+      , the first version of the homepage design. Book time with me about Roost
+      on{" "}
+      <a
+        href="https://topmate.io/ryan_kegerreis"
+        target="_blank"
+        rel="noopener"
+      >
+        Topmate
+      </a>
+      .
     </p>
     <a
       href="https://github.com/ryankegerreis/bettermarkdown"
