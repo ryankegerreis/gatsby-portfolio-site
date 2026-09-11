@@ -35,7 +35,7 @@ const Projects = () => (
       .
     </p>
     <a
-      href="https://github.com/ryankegerreis/bettermarkdown"
+      href="https://github.com/ryankegerreis/bettermarkdown/discussions"
       target="_blank"
       rel="noopener"
     >
