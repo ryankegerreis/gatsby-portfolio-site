@@ -6,13 +6,9 @@ const Projects = () => (
     className="flex-col"
     aria-labelledby="projects-heading"
   >
-    <h1 id="projects-heading">Projects</h1>
+    <h2 id="projects-heading">Projects</h2>
     <p>
-      <a
-        href="https://roostapp.co/"
-        target="_blank"
-        rel="noopener"
-      >
+      <a href="https://roostapp.co/" target="_blank" rel="noopener">
         Roost
       </a>{" "}
       —{" "}
