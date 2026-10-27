@@ -1,3 +1,7 @@
+## Local setup
+
+Use `nvm use` (Node 24.18.0), then `corepack enable` and `pnpm install --frozen-lockfile`. Run `pnpm run develop` for development and `pnpm run build` for the production site. `pnpm-lock.yaml` is authoritative. Keep the hoisted linker for Gatsby and its native image tooling.
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
