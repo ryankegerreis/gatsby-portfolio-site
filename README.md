@@ -1,6 +1,8 @@
 ## Local setup
 
-Use `nvm use` (Node 24.18.0), then `corepack enable` and `pnpm install --frozen-lockfile`. Run `pnpm run develop` for development and `pnpm run build` for the production site. `pnpm-lock.yaml` is authoritative. Keep the hoisted linker for Gatsby and its native image tooling.
+Use `nvm use` (Node 24.22.2), then `corepack enable` and `pnpm install --frozen-lockfile`. Run `pnpm run develop` for development and `pnpm run build` for the production site. `pnpm-lock.yaml` is authoritative. Keep the hoisted linker for Gatsby and its native image tooling.
+
+Run `pnpm run audit` to check the complete dependency tree. `npm audit` requires an npm lockfile and does not audit this project's pnpm lockfile. The development server binds to `127.0.0.1`; deploy the generated `public/` files rather than exposing Gatsby's development server.
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
